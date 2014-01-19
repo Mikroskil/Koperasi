@@ -1,0 +1,168 @@
+@font-face{
+	font-family: fontsatu;
+	src:url('../fonts/a.ttf');
+}
+@font-face{
+	font-family: fontdua;
+	src:url('../fonts/b.ttf');
+}
+.sidebar{
+	height: 100%;
+	width: 300px; 
+	position: fixed;
+	background: rgba(255,255,255,.3);
+	left: 0px;
+	padding-top: 50px;
+}
+body {
+	background: url(../img/) no-repeat  fixed;
+	background-size:100% 100%; 
+	background-color:#D7D0D0;
+}
+.sidebar h1{
+	font:normal 40px fontsatu;
+	text-align: center;
+	color: #fff;
+	margin-top: 15px;
+}
+.sidebar .logo{
+	display: block;
+	margin: 0 auto;
+}
+.sidebar .heading1{
+	height: 180px;
+
+}
+.sidebar .grs{
+	border-top:1px solid #000;
+	border-bottom:1px solid #fff;
+	opacity: .2;
+}
+.sidebar ul{
+	width: 250px;
+	margin: 10px auto;
+	padding: 0;
+}
+.sidebar .icon{
+	display: inline-block;
+	margin-top: -5px;
+	margin-right: 20px;
+	margin-left: -5px;
+	width: 21px;
+}
+.sidebar li{
+	/*border-bottom: 1px solid #fff;*/
+	margin-bottom: 15px;
+}
+.sidebar a{
+	font:normal 19px fontdua;
+	color: #fff;
+	text-decoration: none;
+}
+nav hr{
+	opacity: .3;
+	border-bottom:1px solid #fff;
+}
+.nav_right, .random_img, .nav_left{
+	float:left;
+}
+.nav_right, .nav_left{
+	width: 22px;
+	margin-top: 80px;
+}
+.random_img{
+	width: 206px;
+	text-align: center;
+}
+.mini_slider{
+	margin-left: 25px;
+	margin-top: 30px;
+}
+.clr{
+	clear: both;
+}
+
+
+.credit p{
+	font:normal 14px fontdua;
+	color: #fff;
+}
+.credit{
+	 
+	margin: 0 auto;
+	width: 250px;
+	position: fixed;
+	bottom: 10px;
+	left: 25px;
+}
+.side_header{
+	font:normal 20px fontdua;
+	color: #fff;
+	padding-top: 30px;
+	border-bottom: 1px solid red;
+	text-align: right;
+	height: 30px;
+}
+.page_title{
+	
+	height: 153px;
+	/*border-bottom: 1px solid red;*/
+	position: relative;
+ 
+}
+.page_title h1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font:normal 70px fontsatu;
+	color: #fff;
+}
+.page_title hr{
+ 
+	/*border-bottom: 21px solid #fff;*/
+ 
+	 position: absolute;
+	 border-bottom:1px solid #fff;
+	 opacity: .4;
+	 bottom: 0;left: 0;
+	 width: 100%;	 
+}
+.konten{
+	padding-top: 30px;
+}
+.konten p{
+	font:normal 25px fontdua;
+	color: #fff;
+	text-align:justify;
+	line-height: 45px;
+	text-shadow:0 0 17px #555;
+}
+
+.sosmed{
+	text-align: right;
+	border-top: 1px solid red;
+	margin-top: 30px;
+}
+.sosmed a{
+	margin-left: 25px;
+}
+.container{
+	 
+	min-height: 500px;
+	margin:0 350px;
+	border:1px solid red;
+}
+
+
+
+
+.a{
+	background: red;
+	min-height: 100px;
+}
+.b{
+	background: green;
+	min-height: 100px;
+}
+
+ 

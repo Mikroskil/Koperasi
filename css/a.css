@@ -1,0 +1,254 @@
+@font-face{
+	font-family: fontsatu;
+	src:url('../fonts/a.ttf');
+}
+@font-face{
+	font-family: fontdua;
+	src:url('../fonts/s.ttf');
+}
+body {
+	background: url(../img/) no-repeat  fixed;
+	background-size:100% 100%; 
+	background-color:#D7D0D0;
+} 
+.sidebar{
+	height: 100%;
+	width: 300px; 
+	position: fixed;
+	background: rgba(255,255,255,.3);
+	left: 0px;
+	padding-top: 50px;
+}
+
+.sidebar h1{
+	font:normal 40px fontsatu;
+	text-align: center;
+	color: ##3C2A2A;
+	margin-top: 15px;
+}
+.sidebar .logo{
+	display: block;
+	margin: 0 auto;
+}
+.sidebar .heading1{
+	height: 180px;
+
+}
+.sidebar .grs{
+	border-top:1px solid #000;
+	border-bottom:1px solid ##3C2A2A;
+	opacity: .2;
+}
+.sidebar ul{
+	width: 250px;
+	margin: 20px auto;
+	padding: 0;
+}
+.sidebar .icon-li{
+	display: inline-block;
+	margin-top: 2px;}
+.sidebar li{
+	 
+	height: 30px;
+	margin-bottom: 10px;
+ 
+}
+.sidebar a{
+	font:normal 14px fontdua;
+	color: #3C2A2A;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.sidebar .icon-li{
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+nav hr{
+	opacity: .3;
+	border:0;
+	border-bottom:1px solid #3C2A2A;
+	margin-top: 0px;
+}
+
+.nav_right, .random_img, .nav_left{
+	float:left;
+}
+
+.nav_right, .nav_left{
+	width: 22px;
+	margin-top: 80px;
+}
+.random_img{
+	width: 206px;
+	 
+ 
+	text-align: center;
+	overflow: hidden;
+}
+
+.mini_slider{
+	margin-left: 25px;
+	margin-top: 30px;
+}
+
+
+.credit p{
+	font:normal 11px fontdua;
+	color: #fff;
+}
+.credit{
+	 
+	margin: 0 auto;
+	width: 250px;
+	position: fixed;
+	bottom: 5px;
+	left: 25px;
+}
+
+ 
+
+.tanggal p{
+		text-align: right;
+		font:normal 15px fontdua;
+		color: #fff;
+		margin-top: 50px;
+
+}
+
+.page_header{
+	height: 160px;
+	 padding-top: 30px;	 
+	 
+}
+.page_header h3{
+	color: #fff;
+	font:normal 40px Arial;
+}
+.page_header hr{
+	border:0;
+	border-bottom: 1px dotted #fff;
+	opacity: .3; 
+
+}
+
+
+.konten p{
+	color: #fff;
+	font:normal 16px fontdua;
+	line-height: 29px;
+	text-align: justify;
+	text-indent: 50px;
+}
+
+.sosmed{
+	float:right;
+}
+.sosmed img{
+	margin-left: 20px;
+
+}
+
+
+.myworkthumb{
+	width: 240px;
+	height: 240px;
+	border:5px solid #fff;
+	margin-bottom: 60px;
+}
+
+.timeline-line{
+	border-right:3px solid #fff;
+}
+
+.work-container{
+	/*margin-bottom: 100px;*/
+}
+.work-timeline{
+	width: 140px;
+	height: 140px;
+	border-radius:50%;
+	background: rgba(255,255,255,.5);
+	text-align: center;
+}
+.work-timeline-container{
+	float:right;
+}
+.a{
+	background: red;
+	min-height: 100px;
+}
+.b{
+	background: green;
+	min-height: 100px;
+}
+.c{
+	background: black;
+	min-height: 100px;
+}
+.center{
+	    
+	text-align : center;
+	    
+}
+.sidebar{
+	position : fixed;
+}
+.toval{
+	 -moz-border-radius-bottomleft: 10px; 
+	 -moz-border-radius-bottomright: 20px; 
+	 -moz-border-radius-topleft: 30px; 
+	 -moz-border-radius-topright: 50px 25px; 
+	 
+	 -webkit-border-bottom-left-radius: 10px; 
+	 -webkit-border-bottom-right-radius: 20px; 
+	 -webkit-border-top-left-radius: 30px; 
+	 -webkit-border-top-right-radius: 50px 25px;
+}
+.navigasi{
+	background: #333;
+	width: 300px;
+	height: 100%;
+	z-index:100;
+	position: fixed;
+	left: -300px;
+	padding-top: 50px;
+	top: 0;	
+
+}	
+.gbr-logo{
+	margin-left: 15px;
+}
+.daftar-link{
+	margin-left: 15px;
+}
+.logo-line{
+	border-top:1px solid #1b1b1b;
+	border-bottom: 1px solid #474747;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.daftar-link a{
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 15px;
+	display: block;
+	font:normal 16px century gothic;
+}
+.tomboltogle{
+	position: absolute;
+	right: -45px;top: 50px;
+	color: #fff;		
+	padding: 10px;
+	padding-left: 15px;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px;
+	background: #333;
+}
+.tomboltogle i{
+	cursor: pointer;
+}
+.navigasihide{
+	left: 0;
+}

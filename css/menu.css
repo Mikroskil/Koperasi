@@ -1,0 +1,75 @@
+.navbar-mika .navbar-inner {
+    background: #4d70b7;
+    color: #fff;
+}
+
+.navbar-mika .brand,
+.navbar-mika .nav > li > a {
+    color: #fff;
+    text-shadow: #999 0 1px;
+}
+
+.navbar-mika .nav > li > a:hover,
+.navbar-mika .nav > li > a:focus {
+    background-color: #eee;
+}
+
+.navbar-mika .nav li.dropdown > .dropdown-toggle .caret,
+.navbar-mika .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: #eee;
+    border-bottom-color: #eee;
+}
+
+.navbar .btn-navbar,
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus,
+.navbar .btn-navbar:active, .navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+    color: #fff;
+    background: none;
+}
+
+@media screen and (max-width: 979px) {
+    .navbar-mika .nav-collapse .nav {
+        padding-top: 10px;
+        border-top: 2px solid;
+    }
+    .navbar-mika .nav-collapse .nav > li > a,
+    .navbar-mika .nav-collapse .dropdown-menu a, 
+    .navbar-mika .nav-collapse .dropdown-submenu a {
+        color: #999999;
+    }
+    .navbar-mika .nav-collapse .nav > li > a:hover,
+    .navbar-mika .nav-collapse .nav > li > a:focus,
+    .navbar-mika .nav-collapse .dropdown-menu a:hover,
+    .navbar-mika .nav-collapse .dropdown-menu a:focus,
+    .navbar-mika .nav-collapse .dropdown-submenu > li > a:hover,
+    .navbar-mika .nav-collapse .dropdown-submenu > li > a:focus {
+        color: #222;
+    }
+    .navbar-mika .brand {
+        color: #fff;
+    }
+    .navbar-mika .brand:hover {
+    }
+
+    .navbar-mika .nav > li > a:hover,
+    .navbar-mika .nav > li > a:focus {
+        background-color: #fff;
+    }
+
+    .navbar-mika .dropdown-menu > li > a:hover, .navbar-mika .dropdown-menu > li > a:focus,
+    .navbar-mika .dropdown-submenu:hover > a, .navbar-mika .dropdown-submenu:focus > a {
+        color: #333;
+        background: #ccc;
+    }
+
+    .navbar-mika .nav-collapse .nav > li > a,
+    .navbar-mika .nav-collapse .dropdown-menu a {
+        color: #fff;
+    }
+
+    .navbar-mika {
+        position: fixed; 
+        margin: 0;
+    }
+}

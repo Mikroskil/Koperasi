@@ -1,90 +1,103 @@
+<?php
+error_reporting(0);
+?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Merpati Pos</title>
 
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" href="fontawsome/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/a.css">
 		
 	<SCRIPT TYPE="text/javascript" src="js/jquery.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" src="js/bootstrap.js"></SCRIPT>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".text").val('');
+		$("#username").focus();
+	});
+	function validasi(){
+	var username = $("#username").val();
+	var password = $("#password").val();
+	  if (username.length == 0){
+		alert("Anda belum mengisikan Username.");
+		$("#username").focus();
+		return false();
+	  }		 
+	  if (password.length == 0){
+		alert("Anda belum mengisikan Password.");
+		$("#password").focus();
+		return false();
+	  }
+	  return true();
+	}
+	</script>
+	
+	<style type="text/css">
+		  .form-signin {
+			max-width: 250px;
+			padding: 19px 29px 29px;
+			margin: 0 auto 20px;
+			background-color: #fff;
+			border: 1px solid #e5e5e5;
+			-webkit-border-radius: 5px;
+			   -moz-border-radius: 5px;
+					border-radius: 5px;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+					box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		  }
+		  .form-signin .form-signin-heading,
+		  .form-signin .checkbox {
+			margin-bottom: 10px;
+		  }
+		  .form-signin input[type="text"],
+		  .form-signin input[type="password"] {
+			font-size: 14px;
+			height: auto;
+			margin-bottom: 15px;
+		  }
+		  
+		  .page_header h5{
+				color: #fff;
+				font:normal 50px fontsatu;
+			}
+
+		</style>
  
- 	
 </head>
 <body>
 
  
-		<div class="sidebar">
-			<div class="heading1">
-			<img src="img/kope.png" class="logo">
-			<h1>Merpati Pos</h1>
-			<div class="grs"></div>
-			</div>
-			<nav>
-			<ul class="icons-ul">
-				<li><a href="#"><i class="icon-home icon-li"></i>BERANDA</a><hr></li>
-				<li><a href="works.php"><i class="icon-book icon-li"></i>PROFIL PERUSAHAAN</a><hr></li>
-				<li><a href="regis.php"><i class="icon-plus-sign icon-li"></i>REGISTER</a><hr></li>
-			</ul>
-			</nav>
-		</div>
 		
 		
 		<div class="container">
-			
-				<div class="row">
+			<div class="row">
 					
-						<div class=""> 
-							<div class="form-login-container">
-							
-							<form class="navbar-form pull-right">
-								<form id="form-login" action="#" method="post">
-									<fieldset>
-										<input type="text" id="username" name="username" placeholder="username" />
-										<input type="password" id="password" name="password" placeholder="password"/>
-										<button type="submit" class="btn" >Login</button>
-										<br><a href="#">Lupa Password?</a>
-									</fieldset>
-								</form>
-							</form>
-							
-							</div>
-						</div>
 						
-								 
-
-				</div>
-
-				<div class="row">
-					
-						<div class="col-md-2  "> </div>
-						<div class="col-md-10  page_header">
-								<h3><font color="#3C2A2A"><center>Sistem informasi simpan pinjam berbasis WEB pada koperasi simpan pinjam Merpati Pos</center></font></h3>
-								<hr>
-						</div>				 
-
-				</div>
-
-				<div class="row">
-					
-						<div class="col-md-3 "> </div>
-						<div class="col-md-9  konten">
-								
-
-								<div class="sosmed">
-									
-								</div>
-						</div>				 
+						<div class="page_header">
+								<h5><font color="#3C2A2A"><center>Selamat Datang di Koperasi Merpati POS </center></font></h5>
+								<p class="pull-center">
+								<form class="form-signin" action="proses_login.php" method="post" name="login" onSubmit="return validasi(this)">
+									<input name="username" id="username" type="text" class="input-block-level" placeholder="Username">
+									<input name="password" id="password" type="password" class="input-block-level" placeholder="Password">
+									<span id="button_login"><button class="btn btn-info btn-block" type="submit">Sign in</button></span>
+								</form>
+								</p>
+								<center>ket : bagi karyawan yang ingin bergabung, silahkan daftar manual ke kantor koperasi.</center>
+						</div>	
+							
 
 				</div>
 				
-
+				
+				
+				
 		</div>
 
-
- 
-	
 </body>
 </html>
